@@ -45,8 +45,8 @@ export default {
               textStyle: {
                 color: '#616161',
                 padding: [6, 0, 5, 6],
-                fontSize:16,
-                fontWeight:'bold',
+                fontSize: 16,
+                fontWeight: 'bold',
               }
             },
             radius: 100
@@ -102,5 +102,7 @@ export default {
 #myChart {
   width: 380px;
   height: 300px;
+
+ 
 }
 </style>

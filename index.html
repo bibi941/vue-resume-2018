@@ -9,11 +9,24 @@
 
 <body>
   <div id="app">
-    <top-header></top-header>
-    <echarts></echarts>
+    <el-container>
+      <!-- 头部 -->
+      <el-header height="250px">
+        <top-header></top-header>
+      </el-header>
+      <!-- 主体 -->
+      <el-main>
+        <project-list></project-list>
+        <echarts class="radar"></echarts>
+      </el-main>
+      <!-- 底部 -->
+      <el-footer>Footer</el-footer>
+    </el-container>
     <particles-js></particles-js>
   </div>
   <!-- built files will be auto injected -->
+
+  <script src="//at.alicdn.com/t/font_698038_fdg6xe8cjbawcdi.js"></script>
 </body>
 
 </html>

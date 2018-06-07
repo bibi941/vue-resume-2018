@@ -4,14 +4,12 @@
 
 <script>
 export default {
-  name: 'ParticlesJS',
   mounted () {
     require('particles.js')
     this.$nextTick(() => {
       this.initParticlesJS()
     })
   },
-
   methods: {
     initParticlesJS () {
       /* eslint-disable */
@@ -25,7 +23,7 @@ export default {
             }
           },
           "color": {
-            "value": "#000000"
+            "value": "#ff0000"
           },
           "shape": {
             "type": "circle",
@@ -132,14 +130,18 @@ export default {
 }
 </script>
 
-<style scoped>
-
-#particles{
+<style>
+#particles {
   z-index: -999;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
+  left: 0;
+  background: rgb(237, 242, 247);
 }
 /* Your styles */
 </style>
+
+
+
