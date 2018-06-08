@@ -75,9 +75,7 @@ export default {
 </script>
   
 <style lang="scss" scoped>
-* {
-  color: rgb(97, 124, 140);
-}
+
 h1 {
   margin: 0;
   font-size: 40px;

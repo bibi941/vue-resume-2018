@@ -10,11 +10,12 @@ import indexCss from './css/index.css'
 import ParticlesJs from './components/ParticlesJS.vue'
 import TopHeader from './components/TopHeader.vue'
 import Echarts from './components/Echarts.vue'
-import ProjectList from './components/Project.vue'
+import ProjectList from './components/ProjectList.vue'
+import SkillList from './components/SkillList.vue'
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  components: { TopHeader, ParticlesJs, Echarts, ProjectList }
+  components: { TopHeader, ParticlesJs, Echarts, ProjectList, SkillList }
 })

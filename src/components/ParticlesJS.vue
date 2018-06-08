@@ -132,13 +132,11 @@ export default {
 
 <style>
 #particles {
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgb(237, 242, 247);
+   position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1; 
+    height: initial;
 }
 /* Your styles */
 </style>
