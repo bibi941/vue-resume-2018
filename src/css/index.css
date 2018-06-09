@@ -1,7 +1,12 @@
 * {
   color: rgb(97, 124, 140);
 }
-
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
 .icon {
   width: 1em;
   height: 1em;
@@ -23,7 +28,7 @@
   margin-top: 50px;
 }
 .el-main {
-
+overflow: hidden;
   color: #333;
   text-align: center;
 

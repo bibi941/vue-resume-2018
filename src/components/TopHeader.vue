@@ -1,129 +1,125 @@
 <template>
   <div>
-    <el-row type="flex" justify="center">
-      <el-col :span="10">
-        <div class="grid-content bg-purple">
-          <h1>方欣芮</h1>
-          <el-row :gutter="0" type="flex" justify="space-around">
-            <el-col :span="4">
-              <div class="grid-content bg-bibi">男</div>
-            </el-col>
-            <el-col :span="4">
-              <div class="grid-content bg-bibi">24岁</div>
-            </el-col>
-            <el-col :span="6">
-              <div class="grid-content bg-bibi">本科|四川大学锦江学院</div>
-            </el-col>
-            <el-col :span="4">
-              <div class="grid-content bg-bibi">前端工程师</div>
-            </el-col>
-          </el-row>
-        </div>
-
-        <div class="grid-content bg-purple">
-          <el-row :gutter="0" type="flex" justify="space-around">
-            <el-col :span="4">
-              <div class="grid-content bg-bibi">
-                <span class="content">sssrrr</span>
+    <a href="https://github.com/bibi941" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <header class="top">
+      <h1>方欣芮</h1>
+      <img src="../assets/photo.jpg" alt="">
+    </header>
+    <main>
+      <ul>
+        <li class="list-fir">
+          <div>男</div>
+          <div>23岁</div>
+          <div>本科,四川大学锦江学院</div>
+          <div>前端工程师</div>
+        </li>
+        <li>
+          <div class="list-sec">
+            <div class='icon-warpper'>
+              <div>
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#icon-weixin"></use>
                 </svg>
               </div>
-            </el-col>
-            <el-col :span="4">
-              <div class="grid-content bg-bibi">
-                <span class="content">506206862</span>
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-qq"></use>
-                </svg>
+              <div>
+                sssrrr
               </div>
-            </el-col>
-            <el-col :span="6">
-              <div class="grid-content bg-bibi">
-                <span class="content">sssrrr@vip.qq.com</span>
+            </div>
+
+            <div class='icon-warpper'>
+              <div>
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#icon-youxiang"></use>
                 </svg>
               </div>
-            </el-col>
-            <el-col :span="4">
-              <div class="grid-content bg-bibi">
-                <span class="content">17608003060</span>
+              <div>
+                sssrrr@vip.qq.com
+              </div>
+            </div>
+
+            <div class='icon-warpper'>
+              <div>
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#icon-dianhua"></use>
                 </svg>
               </div>
-            </el-col>
-          </el-row>
-        </div>
-      </el-col>
+              <div>
+                17608003060
+              </div>
+            </div>
 
-      <el-col :span="2">
-        <div class="grid-content bg-purple-light">
-          <img class="photo" src="../assets/photo.jpg" alt="">
-        </div>
-      </el-col>
-    </el-row>
+            <div class='icon-warpper'>
+              <div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-qq"></use>
+                </svg>
+              </div>
+              <div>
+                506206862
+              </div>
+            </div>
 
+          </div>
+        </li>
+      </ul>
+    </main>
   </div>
+
 </template>
   
 <script>
 export default {
+  data () {
+    return {
 
+    }
+  }
 }
 </script>
   
 <style lang="scss" scoped>
-
-h1 {
-  margin: 0;
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: rgb(94, 94, 94);
-}
-.el-row {
-  margin-bottom: 20px;
-  &:last-child {
-    margin-bottom: 0;
+.top {
+  display: flex;
+  justify-content: center;
+  > h1 {
+    position: relative;
+    left: 70px;
+  }
+  > img {
+    position: relative;
+    left: 470px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.521);
+    border-radius: 4px;
   }
 }
-.el-col {
-  border-radius: 4px;
-}
-
-.bg-purple {
-  background: #ffffff00;
-  margin-bottom: 20px
-}
-.bg-bibi {
+main > ul {
   position: relative;
-  background: #ffffff;
-  border-radius: 2px;
-  box-shadow: -1px 0px 17px 0px rgba(50, 50, 50, 0.25);
+  top: -100px;
 }
-
-.grid-content {
-  border-radius: 4px;
-  min-height: 20px;
+.list-fir {
+  display: flex;
+  justify-content: center;
+  min-width: 700px;
+  > div {
+    font-size: 18px;
+    margin: 0 5px;
+  }
 }
-.icon {
-  position: absolute;
-  top: 15px;
-  right: 0;
-  width: 30px;
-  height: 30px;
+.list-sec {
+  display: flex;
+  justify-content: center;
+  min-width: 700px;
 }
-.content{
-  position: relative;
-  left: -15px;
-}
-.photo{
-  position: absolute;
-  top: 50px;
-  width: 130px;
-  height: 163px;
-  box-shadow:0px 0px 9px 0px rgba(50, 50, 50, 1);
-  
+.icon-warpper {
+  margin: 0 10px;
+  display: flex;
+  > div {
+    font-size: 18px;
+    margin: 0 5px;
+    > svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 </style>

@@ -132,11 +132,13 @@ export default {
 
 <style>
 #particles {
-   position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1; 
-    height: initial;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100vh;
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /* Your styles */
 </style>
